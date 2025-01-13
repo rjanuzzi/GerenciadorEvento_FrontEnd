@@ -1,0 +1,39 @@
+@keyframes pulse {
+  0% {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  50% {
+    border-color: #0056b3;
+    box-shadow: 0 0 16px rgba(0, 86, 179, 0.5);
+  }
+  100% {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+}
+
+.input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px; 
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  animation: pulse 1s infinite; 
+}
+
+.input:hover {
+  border-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .input {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

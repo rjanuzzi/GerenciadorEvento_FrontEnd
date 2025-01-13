@@ -1,0 +1,126 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); 
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
+}
+
+.formWrapper {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #007BFF;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+.label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.rememberMeContainer {
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; 
+}
+
+.rememberMeContainer .checkbox {
+  margin-right: 8px; 
+}
+
+.rememberMeContainer .label {
+  font-weight: normal; 
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  width: 100%; 
+}
+
+.button i {
+  margin-right: 8px; 
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.registerButton {
+  background-color: #28a745;
+  width: 100%; 
+}
+
+.registerButton:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  .input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

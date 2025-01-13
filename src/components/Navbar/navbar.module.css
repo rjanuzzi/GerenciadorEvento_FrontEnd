@@ -1,0 +1,98 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #39afab, #013b47); 
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.n {
+  color: #013b47;
+  font-size: 45px;
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(57, 175, 171, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(57, 175, 171, 1);
+    transform: scale(1.05);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(57, 175, 171, 0.5);
+    transform: scale(1);
+  }
+}
+
+.rest {
+  color: #000;
+}
+
+.logoutContainer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logoutButton {
+  background-color: #fff;
+  color: #19536e;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.logoutButton i {
+  margin-right: 8px;
+}
+
+.logoutButton:hover {
+  background-color: #f5f5f5;
+  color: #013b47;
+  border-color: #e6eef1;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .n {
+    font-size: 30px;
+  }
+
+  .logoutButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
